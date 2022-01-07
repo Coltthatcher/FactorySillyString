@@ -4,16 +4,16 @@
 
 @model Factory.Models.Machine
 
-<h2>Add a restaurant</h2>
+<h2>Add a engineer</h2>
 
-<h4>Add a restaurant to this cuisine: @Html.DisplayFor(model => model.Description)</h4>
+<h4>Add a engineer to this machine: @Html.DisplayFor(model => model.Description)</h4>
 
 @using (Html.BeginForm())
 {
-  @Html.HiddenFor(model => model.CuisineId)
+  @Html.HiddenFor(model => model.MachineId)
 
-  @Html.Label("Select restaurant")
-  @Html.DropDownList("RestaurantId")
+  @Html.Label("Select engineer")
+  @Html.DropDownList("EngineerId")
 
   <input type="submit" value="Save" />
 }
