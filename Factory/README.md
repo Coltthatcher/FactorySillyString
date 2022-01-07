@@ -25,8 +25,26 @@ _Project using MVC routing, DataBases to replicate a factory setting in which En
 * _Clone the GitHub [repository]() or download and open the Zip on your local machine.
 * _inside Git or Terminal navigate to the project directory using cd SillyStringzFactory.Solution_
 * _Then you will want to be in the root project folder so cd Factory_
-* _Create an appsettings.json file in the folder listed above by typing "touch appsettings.json"_
+* _Create an appsettings.json file in the folder listed above by typing "touch appsettings.json"
+* _Add the code listed below to your appsettings.json file_
+* _{
+"ConnectionStrings": {
+"DefaultConnection": "Server=localhost;Port=3306;database=[YOUR DATABASE];uid=root;pwd=[YOUR PASSWORD];"
+}
+}_
+* _Note [YOUR DATABASE] and [YOUR PASSWORD] are the same as your personal database.
 * _Open localhost5000 in the terminal to view and use the website_
+
+## Setting Up A Database
+
+* _You will need to download MySQL and MySql Workbench to create a database_
+* _After you have installed MySQL Workbench open it and a local server_
+* _The Navigator box on the left includes an Administration tab, open it and Choose to Select Data/Import restore_
+* _In the category import options choose import from Self-Contained File, and then select "colt_thatcher_factory.sql" this file is located in SillyStringzFactory.Solution._
+* _Select New in the default schema option_
+* _Enter a database name and confirm_
+* _Start import to begin importing your database_
+
 
 
 
