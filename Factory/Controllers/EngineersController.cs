@@ -1,11 +1,11 @@
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
-using RestaurantsCuisines.Models;
+using Factory.Models;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SillyFactory.Controllers
+namespace Factory.Controllers
 {
   public class EngineersController : Controllers
   {
@@ -14,6 +14,11 @@ namespace SillyFactory.Controllers
     public EngineersController(FactoryContext db)
     {
       _db = db;
+    }
+    public ActionResult Index()
+    {
+      List<Engineer> model = _db.Engineers.ToList();
+      return View(model);
     }
   }
 }
