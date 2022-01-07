@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace Factory.Controllers
 {
-  public class EngineersController : Controllers
+  public class EngineersController : Controller
   {
     private readonly FactoryContext _db;
 
@@ -19,6 +19,11 @@ namespace Factory.Controllers
     {
       List<Engineer> model = _db.Engineers.ToList();
       return View(model);
+    }
+
+    public ActionResult Create()
+    {
+      return View();
     }
   }
 }
