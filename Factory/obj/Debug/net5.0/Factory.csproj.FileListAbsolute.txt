@@ -30,3 +30,5 @@ C:\Users\coltt\OneDrive\Desktop\SillystringzFactory.Solution\Factory\obj\Debug\n
 C:\Users\coltt\OneDrive\Desktop\SillystringzFactory.Solution\Factory\obj\Debug\net5.0\ref\Factory.dll
 C:\Users\coltt\OneDrive\Desktop\SillystringzFactory.Solution\Factory\obj\Debug\net5.0\Factory.pdb
 C:\Users\coltt\OneDrive\Desktop\SillystringzFactory.Solution\Factory\obj\Debug\net5.0\Factory.genruntimeconfig.cache
+C:\Users\coltt\OneDrive\Desktop\SillystringzFactory.Solution\Factory\obj\Debug\net5.0\Factory.RazorAssemblyInfo.cache
+C:\Users\coltt\OneDrive\Desktop\SillystringzFactory.Solution\Factory\obj\Debug\net5.0\Factory.RazorAssemblyInfo.cs
