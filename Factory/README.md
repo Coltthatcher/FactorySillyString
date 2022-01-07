@@ -40,7 +40,7 @@ _Project using MVC routing, DataBases to replicate a factory setting in which En
 * _You will need to download MySQL and MySql Workbench to create a database_
 * _After you have installed MySQL Workbench open it and a local server_
 * _The Navigator box on the left includes an Administration tab, open it and Choose to Select Data/Import restore_
-* _In the category import options choose import from Self-Contained File, and then select "colt_thatcher_factory.sql" this file is located in SillyStringzFactory.Solution._
+* _In the category import options choose import from Self-Contained File, and then select `colt_thatcher_factory.sql` this file is located in `SillyStringzFactory.Solution`._
 * _Select New in the default schema option_
 * _Enter a database name and confirm_
 * _Start import to begin importing your database_
