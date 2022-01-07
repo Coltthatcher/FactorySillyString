@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Factory.Models;
 
-namespace RestaurantsCuisines
+namespace Factory
 {
   public class Startup
   {
