@@ -8,7 +8,7 @@ using System.Linq;
 
 namespace Factory.Controllers
 {
-  public class MachineController : Controllers
+  public class MachineController : Controller
   {
     private readonly FactoryContext _db;
 
@@ -28,6 +28,33 @@ namespace Factory.Controllers
       return View();
     }
 
-    
+    [HttpPost]
+    public ActionResult Create(Machine machine, int EngineerId)
+    {
+      _db.Machines.Add(machine);
+      _db.SaveChanges();
+      if (EngineerId != 0)
+      {
+        _db.EngineerMachine.Add(new EngineerMachine() { EngineerId = EngineerId, MachineId = machine.MachineId });
+      }
+      _db.SaveChanges();
+      return RedirectToAction("Index");
+    }
+
+    public ActionResult Details(int id)
+    {
+      var thisMachine = _db.Machines
+          .Include(machine => machine.JoinEntities)
+          .ThenInclude(join => join.Engineer)
+          .FirstOrDefault(machine => machine.MachineId == id);
+      return View(thisMachine);
+    }
+
+    public ActionResult Edit(int id)
+    {
+      var thisCuisine = _db.Cuisines.FirstOrDefault(cuisine => cuisine.CuisineId == id);
+      ViewBag.RestaurantId = new SelectList(_db.Restaurants, "RestaurantId", "Name");
+      return View(thisCuisine);
+    }
   }
 }
