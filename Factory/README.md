@@ -65,7 +65,7 @@ _Currently there is zero functionality because i installed the wrong version of 
 ## License
 
 _[MIT](https://opensource.org/licenses/MIT)_
-Copyright (c) _2021_ _Colton Thatcher_
+Copyright (c) _2021_ _Colt Thatcher_
 
 ## Support and Contact Details
 * _[colt.thatcher303@gmail.com](colt.thatcher303@gmail.com)_
