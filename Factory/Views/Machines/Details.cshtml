@@ -14,7 +14,7 @@
 }
 else
 {
-  <h4>This cuisine can be found at these restaurants:</h4>
+  <h4>Engineers with the credintials to work on this machine :</h4>
   <ul>
   @foreach(var join in Model.JoinEntities)
   {
@@ -24,18 +24,6 @@ else
 }
 
 <p>@Html.ActionLink("Back to list", "Index")</p>
-<p>@Html.ActionLink("Edit Cuisine", "Edit", new { id = Model.CuisineId })</p>
-<p>@Html.ActionLink("Delete Cuisine", "Delete", new { id = Model.CuisineId })</p> 
-<p>@Html.ActionLink("Add a Restaurant", "AddRestaurant", new { id = Model.CuisineId })</p>
-
-<ul>
-@foreach(var join in Model.JoinEntities)
-{
-  <li>@join.Restaurant.Name</li>
-  @using (Html.BeginForm("DeleteRestaurant", "Cuisines"))
-  {
-    @Html.Hidden("joinId", @join.RestaurantCuisineId)
-    <input type="submit" value="Delete"/>
-  }
-}
-</ul>
+<p>@Html.ActionLink("Edit Machine", "Edit", new { id = Model.MachineId })</p>
+<p>@Html.ActionLink("Delete Machine", "Delete", new { id = Model.MachineId })</p> 
+<p>@Html.ActionLink("Add a Engineer", "AddEngineer", new { id = Model.MachineId })</p>
