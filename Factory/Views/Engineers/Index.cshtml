@@ -12,9 +12,9 @@
 } 
 
 <ul>
-  @foreach(Engineers engineers in Model)
+  @foreach(Engineer engineers in Model)
   {
-    <li>@Html.ActionLink($"{engineers.Name}", "Details", new { id = engineers.EngineersId })</li>
+    <li>@Html.ActionLink($"{engineers.Name}", "Details", new { id = engineers.EngineerId })</li>
   }
 </ul>
 
