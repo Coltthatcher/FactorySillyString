@@ -35,13 +35,9 @@ _Project using MVC routing, DataBases to replicate a factory setting in which En
 
 ## Setting Up A Database
 
-* _You will need to download MySQL and MySql Workbench to create a database._
-* _After you have installed MySQL Workbench open it and a local server._
-* _The Navigator box on the left includes an Administration tab, open it and Choose to Select Data/Import restore._
-* _In the category import options choose import from Self-Contained File, and then select `colt_thatcher_factory.sql` this file is located in `SillyStringzFactory.Solution`._
-* _Select New in the default schema option._
-* _Enter a database name and confirm._
-* _Start import to begin importing your database._
+* Add the name of your database and password to the appsettings.json file_
+* _To update the databse, run the command: $ dotnet ef database update._
+
 
 ## Running the website
 
@@ -54,11 +50,11 @@ _Project using MVC routing, DataBases to replicate a factory setting in which En
 
 ## Known Bugs
 
-_Currently there is zero functionality because I installed the wrong version of dotnet ef globally and cannot uninstall._
+__
 
 ## Future Updates
 
-* _Hopefully Functionality can be added to the site._
+* __
 
 ## License
 

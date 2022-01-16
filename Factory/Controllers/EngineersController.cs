@@ -79,25 +79,5 @@ namespace Factory.Controllers
       ViewBag.MachineId = new SelectList(_db.Machines, "MachineId", "MachineName");
       return View(thisEngineer);
     }
-
-    [HttpPost]
-    public ActionResult AddMachine(Engineer engineer, int MachineId)
-    {
-      if (MachineId != 0)
-      {
-        _db.EngineerMachine.Add(new EngineerMachine() { MachineId = MachineId, EngineerId = engineer.EngineerId });
-      }
-      _db.SaveChanges();
-      return RedirectToAction("Details", new { id = engineer.EngineerId });
-    }
-
-    [HttpPost]
-    public ActionResult DeleteMachine(int joinId, int engineerId)
-    {
-      var joinEntry = _db.EngineerMachine.FirstOrDefault(joinEntry => joinEntry.EngineerMachineId == joinId);
-      _db.EngineerMachine.Remove(joinEntry);
-      _db.SaveChanges();
-      return RedirectToAction("Details", new { id = engineerId });
-    }
   }
 }
